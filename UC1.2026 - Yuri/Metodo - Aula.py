@@ -59,31 +59,31 @@
 # conta1.depositar(50) #Chamando o método depositar do objeto conta1, que adiciona 50 ao saldo da conta.
 # print(conta1.saldo) #Imprimindo o saldo da conta1, que agora é 150.
 
-class conta:
-    def __init__(self,saldo):
-        self.saldo = saldo
+# class conta:
+#     def __init__(self,saldo):
+#         self.saldo = saldo
 
-    def sacar(self,valor):
-        #Verificando se o valor do saque é maior que 0 e menor ou igual ao saldo da conta. Se for, o valor é subtraído do saldo e uma mensagem de sucesso é exibida. Caso contrário, uma mensagem de erro é exibida.
-        if valor > 0 and valor <= self.saldo:
-            self.saldo -= valor
-            print("Saque realizado!")
-        else:
-            print("Saque inválido!")
+#     def sacar(self,valor):
+#         #Verificando se o valor do saque é maior que 0 e menor ou igual ao saldo da conta. Se for, o valor é subtraído do saldo e uma mensagem de sucesso é exibida. Caso contrário, uma mensagem de erro é exibida.
+#         if valor > 0 and valor <= self.saldo:
+#             self.saldo -= valor
+#             print("Saque realizado!")
+#         else:
+#             print("Saque inválido!")
 
-#criando a conta com 100 de saldo
-conta_do_cliente = conta(100)
+# #criando a conta com 100 de saldo
+# conta_do_cliente = conta(100)
 
-#testanto um saque válido
-conta_do_cliente.sacar(30)
-#vai imprimir: Saque realizado!
+# #testanto um saque válido
+# conta_do_cliente.sacar(30)
+# #vai imprimir: Saque realizado!
 
-#Testando saque inválido
-conta_do_cliente.sacar(200)
-#Vai imprimir saque inválido!
+# #Testando saque inválido
+# conta_do_cliente.sacar(200)
+# #Vai imprimir saque inválido!
 
-#Mostrando o saldo final
-print("O saldo final é:", conta_do_cliente.saldo)
+# #Mostrando o saldo final
+# print("O saldo final é:", conta_do_cliente.saldo)
 
 # ------------------- CONSTRUINDO UMA CLASSE PRODUTO
 class Produto:
